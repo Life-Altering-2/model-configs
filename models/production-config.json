@@ -1,0 +1,40 @@
+{
+  "version": "6.5.0",
+  "lastUpdated": "2026-07-31T09:42:17Z",
+  "models": [
+    {
+      "id": "taylor-medical-llm-4bit",
+      "name": "Taylor Medical LLM \u2014 LFM2.5-1.2B (MLX 4-bit)",
+      "size": "small",
+      "version": "6.5.0",
+      "downloadURLs": [],
+      "estimatedMemoryMB": 1200,
+      "capabilities": [
+        "text_generation",
+        "health_analysis",
+        "safety_validation"
+      ],
+      "checksumSHA256": "6979d1777fc72d14389e65c894cc6a9a9f74abb9cb8e72220bee40c3594e8675",
+      "description": "v6.1 co-trained LFM2.5-1.2B (reverted from the v6.4.0 DPO-toolselect pathfinder \u2014 DPO regressed on-device SELECT/VALID; see eval 2026-07-31). MLX 4-bit.",
+      "huggingFaceRepo": "oscardeng/taylor-medical-llm-4bit",
+      "huggingFaceRevision": "0e97d601e5b852dd32646951656a86194c3a48c6",
+      "requiredFiles": [
+        "config.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "generation_config.json",
+        "model.safetensors",
+        "model.safetensors.index.json"
+      ]
+    }
+  ],
+  "downloadStrategy": {
+    "maxConcurrentDownloads": 2,
+    "retryAttempts": 3,
+    "retryDelay": 5.0,
+    "enableResumeDownload": true,
+    "enableProgressiveDownload": true,
+    "chunkSizeMB": 10
+  },
+  "abTesting": null
+}
