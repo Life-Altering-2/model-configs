@@ -5,7 +5,7 @@ Fallback mirror of the Taylor iOS app's on-device model configuration.
 The app fetches its model configuration from these sources, in order:
 
 1. `https://config.taylor-ai.info/models/production-config.json` (primary)
-2. `https://backup-config.taylor-ai.info/models/config.json` (backup)
+2. `https://backup-config.taylor-ai.info/models/production-config.json` (backup)
 3. `https://raw.githubusercontent.com/Life-Altering-2/model-configs/main/models/production-config.json` (this repo)
 
 The first two hosts sit behind the same CloudFront distribution, so this repo is
